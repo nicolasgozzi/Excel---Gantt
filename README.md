@@ -10,7 +10,7 @@ It´s a very common tool in Project Managment of any  kind (usually to compare t
 timings Vs the actual timings), as it depicts Time in  columns and each row is a task or process that 
 has an assinged time frame in mind. 
 
-What is in this example?
+###What is in this example?
 In this example i took the gantt formulas needed to buildit in a way to track credit card expenses.
 
 ###*Guiding questions :
@@ -24,6 +24,6 @@ In this example i took the gantt formulas needed to buildit in a way to track cr
 The "core" for this chart is applying correctly "dinamyc formating".
 Each Cell from **J6** to **AA:30**, has the same relative formula:
 	* *(=+IF(AND(J$5>=$F6;J$5<=$G6);$H6;0)* *
-	This formula will conditionally check if the value of **J5(our month label)** is within 
-	our  start and end  purchase date (hidden in **H6 and F6**).If this is true it will 
-	return us **H6 (purchase amount)**.
+This formula will conditionally check if the value of **J5(our month label)** is within 
+our  start and end  purchase date (hidden in **H6 and F6**).If this is true it will 
+return us **H6 (purchase amount)**.
