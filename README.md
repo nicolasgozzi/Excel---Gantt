@@ -31,21 +31,21 @@ In this version we are just mirroring with the + the source table. We could feed
 
 ### Aggregatin values in the top columns.
 While we are sourcing the valeus on exact dates **(dd/mm/yyyy)**. Gannt columns havec been formatted as **MM** to show only the month and on top it´s Formated as **YYY** to show only the year. If we need a more detailed(let´s say daily or weekly) we need to do 2 things:
-
-	1. Change the **Cell formatting** from  MM to D/DD/DDD/DDDD for Days. 
-	Date example 01/05/2019
-		D 	= 1
-		DD 	=01
-		DDD	= Wen
-		DDDD= Wendsay
-		
-	2. change the 30 to 1 for days or 7 for weeksm, on all our date dynamic values
+1. Change the **Cell formatting** from  MM to D or DD or DDD or DDDD for Days, depending on what format is better  to offer.
+Date example 01/05/2019
+	D 	= 1
+	DD 	=01
+	DDD	= Wed
+	DDDD= Wednesday
+	
+2. Change the 30 to 1 for days or 7 for weeks, on all our date dynamic values. this way they will dynamicalyy show  +1 days from  the  starting date,  +7 days (1 week) or +30(1 month).
+ 
 	A.	On the Core Cell in yellow **E1**, which indicates the starting  value of our chartt. it´s currently seet as monthly therefore :
-		```
-		=+MIN(F6:G29)-30	
-		```
+	```
+	=+MIN(F6:G29)-30	
+	```
 	B. On *J5* 5 we have to start our gantt 
-		```
-		=+E1+(Show.Sem*30)
-		```
+	```
+	=+E1+(Show.Sem*30)
+	```
 	C. on all other rows 5 cells, which mirror the previous colum +30.
